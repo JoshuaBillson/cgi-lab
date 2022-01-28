@@ -29,7 +29,24 @@ try:
 except:
     from html import escape #v3.8
 
-__all__ = ['login_page', 'secret_page', 'after_login_incorrect']
+__all__ = ['login_page', 'secret_page', 'after_login_incorrect', 'echo_login_page']
+
+
+def echo_login_page():
+    """
+    Returns the HTML for the login page.
+    """
+
+    return _wrapper(r"""
+    <h1> Welcome! </h1>
+
+    <form method="POST" action="login_echo.py">
+        <label> <span>Username:</span> <input autofocus type="text" name="username"></label> <br>
+        <label> <span>Password:</span> <input type="password" name="password"></label>
+
+        <button type="submit"> Login! </button>
+    </form>
+    """)
 
 
 def login_page():
