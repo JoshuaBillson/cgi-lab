@@ -14,4 +14,4 @@
 
 **Question 7:** Cookies are used to allow a web service to store data on the client. The data set inside a cookie will be returned by the client with each request, making it a popular solution to storing session data. In this case, we are using cookies to store authentication data.
 
-**Question 8:** Abc
+**Question 8:** https://github.com/JoshuaBillson/cgi-lab
